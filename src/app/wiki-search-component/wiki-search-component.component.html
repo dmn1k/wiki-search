@@ -1,9 +1,9 @@
 <h1>Search Wikipedia</h1>
-<input #searchField (keyup)="search(searchField.value)" />
-<ul>
-  <li *ngFor="let item of items | async">
+<input type="text" placeholder="Enter search text" #searchField (keyup)="search(searchField.value)" />
+<div class="list-group">
+  <div class="list-group-item" *ngFor="let item of items | async">
     <a href="{{item.url}}" target="_blank">{{item.title}}</a>
-  </li>
-</ul>
+  </div>
+</div>
 
 

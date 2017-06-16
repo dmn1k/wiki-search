@@ -2,7 +2,7 @@ import { TestBed, inject } from '@angular/core/testing';
 
 import { WikiSearchService } from './wiki-search.service';
 
-describe('WikiSearchServiceService', () => {
+describe('WikiSearchService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [WikiSearchService]
